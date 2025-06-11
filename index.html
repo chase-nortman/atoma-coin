@@ -95,7 +95,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+            box-shadow: 0 6px 24px 0 rgba(0,0,0,0.18), 0 1.5px 6px 0 rgba(0,0,0,0.10);
             transition: transform 0.13s cubic-bezier(.34,1.56,.64,1), box-shadow 0.13s;
             background: none;
             padding: 0;
@@ -112,6 +112,10 @@
         .icon-btn:active {
             transform: scale(1.08);
             box-shadow: 0 6px 24px rgba(0,0,0,0.18);
+        }
+        .icon-btn:hover {
+            transform: translateY(-8px) scale(1.08);
+            box-shadow: 0 12px 32px 0 rgba(0,0,0,0.22), 0 2px 8px 0 rgba(0,0,0,0.13);
         }
         @media (max-width: 700px) {
             .atoma-title {
