@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$ATOMA</title>
+    <link href="https://api.fontshare.com/v2/css?f[]=chillax@1,700&f[]=satoshi@1,400&display=swap" rel="stylesheet">
+    <style>
+        html {
+            background-color: #fff;
+            background-image:
+                linear-gradient(rgba(0,0,0,0.1) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0,0,0,0.1) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            width: 100vw;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Satoshi', Arial, sans-serif;
+            background: none;
+            overflow-x: hidden;
+        }
+        .background-coin {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            width: 900px;
+            max-width: 135vw;
+            opacity: 0.5;
+            z-index: 0;
+            pointer-events: none;
+            user-select: none;
+            transform: translate(-50%, -50%);
+        }
+        .main-content {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            max-width: 100vw;
+            overflow: visible;
+        }
+        .atoma-title {
+            font-family: 'Satoshi', Arial, sans-serif;
+            font-size: 10.5vw;
+            font-weight: 500;
+            background: linear-gradient(90deg,
+              #ffe9a7 0%,      /* brighter pastel yellow, very left */
+              #f7e6b7 30%,     /* soft yellow, still left */
+              #e0c3fc 55%,     /* soft purple */
+              #b7eaff 75%,     /* blue */
+              #ffe9d2 100%     /* soft peach at far edge */
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+            text-align: center;
+            margin: 0;
+            letter-spacing: -0.04em;
+            width: 100vw;
+            overflow: visible;
+        }
+        .subheading {
+            font-family: 'Satoshi', Arial, sans-serif;
+            font-size: 4rem;
+            color: #888;
+            font-weight: 400;
+            text-align: center;
+            margin: -1em 0 0.7em 0;
+        }
+        .icon-row {
+            display: flex;
+            gap: 18px;
+            justify-content: center;
+            align-items: center;
+            margin-top: -2em;
+        }
+        .icon-btn {
+            width: 84px;
+            height: 84px;
+            border-radius: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+            transition: transform 0.13s cubic-bezier(.34,1.56,.64,1), box-shadow 0.13s;
+            background: none;
+            padding: 0;
+            border: none;
+            margin: 0;
+        }
+        .icon-btn img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 18px;
+            display: block;
+        }
+        .icon-btn:active {
+            transform: scale(1.08);
+            box-shadow: 0 6px 24px rgba(0,0,0,0.18);
+        }
+        @media (max-width: 700px) {
+            .atoma-title {
+                font-size: 18vw;
+            }
+            .subheading {
+                font-size: 1.8rem;
+            }
+            .background-coin {
+                width: 90vw;
+            }
+            .icon-btn {
+                width: 42px;
+                height: 42px;
+                border-radius: 9px;
+            }
+            .icon-btn img {
+                border-radius: 9px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="atoma-coin-gr.png" alt="ATOMA Coin" class="background-coin" />
+    <div class="main-content">
+        <h1 class="atoma-title">$ATOMA</h1>
+        <div class="subheading">The beginning of our ecosystem.</div>
+        <div class="icon-row">
+            <a href="https://believe.app/" class="icon-btn" target="_blank" rel="noopener">
+                <img src="believe.jpg" alt="Believe" />
+            </a>
+            <a href="https://x.com/atomaAI" class="icon-btn" target="_blank" rel="noopener">
+                <img src="x.png" alt="X" />
+            </a>
+            <a href="https://dexscreener.com/solana/" class="icon-btn" target="_blank" rel="noopener">
+                <img src="dex.png" alt="Dex" />
+            </a>
+        </div>
+    </div>
+</body>
+</html> 
