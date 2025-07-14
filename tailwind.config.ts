@@ -20,7 +20,7 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				'sans': ['Inter', 'system-ui', 'sans-serif'],
+				'sans': ['Satoshi', 'system-ui', 'sans-serif'],
 				'display': ['Space Grotesk', 'system-ui', 'sans-serif'],
 			},
 			colors: {
@@ -93,7 +93,7 @@ export default {
 				'fade-in': {
 					'0%': {
 						opacity: '0',
-						transform: 'translateY(20px)'
+						transform: 'translateY(30px)'
 					},
 					'100%': {
 						opacity: '1',

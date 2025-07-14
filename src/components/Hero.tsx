@@ -4,7 +4,7 @@ import { ExternalLink, FileText } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center px-4 relative overflow-hidden">
+    <section className="min-h-[150vh] flex items-center justify-center px-4 relative overflow-hidden pb-4">
       {/* Animated background elements */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-20 left-20 w-64 h-64 bg-blue-200/30 rounded-full blur-3xl animate-pulse"></div>
@@ -24,14 +24,14 @@ const Hero = () => {
         </div>
 
         {/* Headline */}
-        <div className="mb-12 animate-fade-in delay-200">
+        <div className="mb-8 animate-fade-in delay-200">
           <h2 className="text-2xl md:text-4xl font-light text-gray-800 leading-relaxed max-w-3xl mx-auto">
             The engine powering the Atoma platform—where token economics meet practical utility
           </h2>
         </div>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in delay-400">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in delay-400 mb-2">
           <Button size="lg" className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
             <FileText className="mr-2 h-5 w-5" />
             View Whitepaper
@@ -40,6 +40,30 @@ const Hero = () => {
             <ExternalLink className="mr-2 h-5 w-5" />
             Trade Token
           </Button>
+        </div>
+
+        {/* Mission Statement with Video */}
+        <div className="mt-8 flex justify-center animate-fade-in delay-500">
+          <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-6 md:p-8 shadow-xl border border-white/20 max-w-4xl mx-auto">
+            {/* Video */}
+            <div className="mb-6 overflow-hidden rounded-2xl">
+                          <video 
+              className="w-full h-auto"
+              controls
+              preload="metadata"
+            >
+              <source src="/atomacoin.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            </div>
+            
+            {/* Mission Statement */}
+            <p className="text-base md:text-xl leading-relaxed text-gray-700 font-light">
+              Atoma's mission is to <span className="font-semibold text-purple-700">fuse rewarding token economics with practical product utility</span>, 
+              ensuring that holders benefit directly as platform adoption grows. Every transaction, every new user, 
+              and every milestone reached strengthens the entire ecosystem.
+            </p>
+          </div>
         </div>
       </div>
     </section>

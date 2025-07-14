@@ -17,15 +17,15 @@ const Footer = () => {
               creating value for holders as the platform grows.
             </p>
             <div className="flex gap-4">
-              <Button variant="outline" size="sm" className="border-gray-600 text-gray-300 hover:bg-gray-800">
+              <Button variant="outline" size="sm" className="border-gray-600 text-gray-600 hover:bg-gray-800 hover:text-white">
                 <MessageCircle className="h-4 w-4 mr-2" />
                 Discord
               </Button>
-              <Button variant="outline" size="sm" className="border-gray-600 text-gray-300 hover:bg-gray-800">
+              <Button variant="outline" size="sm" className="border-gray-600 text-gray-600 hover:bg-gray-800 hover:text-white">
                 <Twitter className="h-4 w-4 mr-2" />
                 Twitter
               </Button>
-              <Button variant="outline" size="sm" className="border-gray-600 text-gray-300 hover:bg-gray-800">
+              <Button variant="outline" size="sm" className="border-gray-600 text-gray-600 hover:bg-gray-800 hover:text-white">
                 <Github className="h-4 w-4 mr-2" />
                 GitHub
               </Button>
@@ -52,7 +52,7 @@ const Footer = () => {
           {/* Resources */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Resources</h3>
-            <div className="space-y-2">
+            <div className="space-y-2 flex flex-col">
               <Button variant="link" className="p-0 h-auto text-gray-300 hover:text-white justify-start">
                 <FileText className="h-4 w-4 mr-2" />
                 Whitepaper

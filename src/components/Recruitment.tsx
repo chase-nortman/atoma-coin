@@ -42,8 +42,8 @@ const Recruitment = () => {
               <Button size="lg" variant="secondary" className="bg-white text-purple-700 hover:bg-gray-100 px-8 py-4 rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
                 Apply as Developer
               </Button>
-              <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-purple-700 px-8 py-4 rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
-                Become an Advisor
+              <Button size="lg" variant="secondary" className="bg-white text-purple-700 hover:bg-gray-100 px-8 py-4 rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                Apply as an Advisor
               </Button>
             </div>
           </div>

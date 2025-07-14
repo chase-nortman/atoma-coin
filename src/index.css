@@ -100,6 +100,53 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
+  }
+}
+
+/* Satoshi Font Utility Classes */
+@layer utilities {
+  .font-satoshi {
+    font-family: 'Satoshi', system-ui, sans-serif;
+  }
+  
+  .font-satoshi-light {
+    font-family: 'Satoshi', system-ui, sans-serif;
+    font-weight: 300;
+  }
+  
+  .font-satoshi-regular {
+    font-family: 'Satoshi', system-ui, sans-serif;
+    font-weight: 400;
+  }
+  
+  .font-satoshi-medium {
+    font-family: 'Satoshi', system-ui, sans-serif;
+    font-weight: 500;
+  }
+  
+  .font-satoshi-semibold {
+    font-family: 'Satoshi', system-ui, sans-serif;
+    font-weight: 600;
+  }
+  
+  .font-satoshi-bold {
+    font-family: 'Satoshi', system-ui, sans-serif;
+    font-weight: 700;
+  }
+  
+  .font-satoshi-black {
+    font-family: 'Satoshi', system-ui, sans-serif;
+    font-weight: 900;
+  }
+  
+  /* Roadmap Animation Fixes */
+  .roadmap-item.animate-fade-in {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+  
+  .roadmap-item {
+    will-change: opacity, transform;
   }
 }
